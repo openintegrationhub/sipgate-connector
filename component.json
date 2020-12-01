@@ -1,0 +1,32 @@
+{
+  "title": "Sipgate",
+  "description": "Sipgate OIH Connector",
+  "docsUrl": "https://github.com/openintegrationhub/snazzy-adapter",
+  "buildType": "docker",
+  "credentials": {
+    "fields": {
+      "apikey": {
+        "label": "Your sipgate API key",
+        "required": true,
+        "viewClass": "TextFieldView",
+        "placeholder": "46u08jvqw93rjsddafidpirs"
+      }
+    }
+  },
+  "triggers": {
+    "getContacts": {
+      "title": "Fetch Contacts",
+      "description": "Get Sipgate contacts",
+      "type": "polling",
+      "main": "./lib/triggers/getContacts.js"
+    }
+  },
+  "actions": {
+    "upsertContact": {
+      "title": "Upsert a contact",
+      "description": "Upsert Sipgate contacts",
+      "type": "polling",
+      "main": "./lib/actions/upsertContact.js"
+    }
+  }
+}
