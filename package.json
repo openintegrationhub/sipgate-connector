@@ -1,6 +1,6 @@
 {
   "name": "@openintegrationhub/sipgate-connector",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "OIH Connector for Sipgate",
   "homepage": "https://openintegrationhub.com/",
   "author": {
