@@ -319,11 +319,13 @@ describe('Get Contacts', () => {
       //   limit: 100000,
       //   offset: 0,
       // })
-      .reply(200, [
-        { id: 1, name: 'Jane Doe' }, // updated: '2018-08-16T11:42:47.000+02:00'
-        { id: 2, name: 'Joe Doe' }, // updated: '2018-08-17T11:42:47.000+02:00'
-        { id: 3, name: 'Sunny Doe' }, // updated: '2018-08-18T11:42:47.000+02:00'
-      ]);
+      .reply(200, {
+        items: [
+          { id: 1, name: 'Jane Doe' }, // updated: '2018-08-16T11:42:47.000+02:00'
+          { id: 2, name: 'Joe Doe' }, // updated: '2018-08-17T11:42:47.000+02:00'
+          { id: 3, name: 'Sunny Doe' }, // updated: '2018-08-18T11:42:47.000+02:00'
+        ],
+      });
 
     // , { lastUpdated: new Date('2018-08-16T13:00:00.000+02:00').getTime() }
     const response = await getContacts({ accessToken: 'aTestKey' });
