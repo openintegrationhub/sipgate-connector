@@ -54,11 +54,12 @@ This connector transforms to and from the sipgate contact data model, using thes
 ## Usage
 
 
-1. register for the sipgate rest api v2
-2. set redirect uri to https://app.yourservice.com/callback/oauth2
-3. set contacts:read contacts:write addresses:read addresses:write
-4. set register secret in secret service
-5. add secret to flow step
+1. Register for the sipgate rest api v2 in Sipgate Feature Store
+2. Create api client on https://console.sipgate.com
+3. Set redirect uri to https://app.yourservice.com/callback/oauth2
+4. Set contacts:read contacts:write addresses:read addresses:write
+5. Set register secret in secret service
+6. Add secret to flow step
 
 
 ## Actions

@@ -1,8 +1,8 @@
-version: 2.1
+version: 0.3
 executors:
   docker-publisher:
     environment:
-      IMAGE_NAME: openintegrationhub/placetel-connector
+      IMAGE_NAME: openintegrationhub/sipgate-connector
     docker:
       - image: circleci/node:12-stretch
 jobs:
