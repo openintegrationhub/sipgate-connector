@@ -166,7 +166,7 @@ describe('Transformations', () => {
             ],
           },
         ],
-        organization: [],
+        // organization: [],
         picture: '',
         scope: 'PRIVATE',
       },
