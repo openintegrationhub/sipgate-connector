@@ -115,7 +115,7 @@ describe('Transformations', () => {
           {
             email: 'jdoe@mail.com',
             type: [
-              '',
+              'string',
             ],
           },
           {
@@ -138,13 +138,13 @@ describe('Transformations', () => {
           {
             number: '24680',
             type: [
-              '',
+              'string',
             ],
           },
           {
             number: '08642',
             type: [
-              '',
+              'string',
             ],
           },
           {
@@ -162,7 +162,7 @@ describe('Transformations', () => {
           {
             number: '01735',
             type: [
-              '',
+              'string',
             ],
           },
         ],
