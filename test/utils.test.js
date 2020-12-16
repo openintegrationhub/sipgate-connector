@@ -168,6 +168,7 @@ describe('Upsert Contact', () => {
       // },
     })
       .put('/12345', {
+        id: '12345',
         name: 'Jane Doe',
         family: 'Doe',
         given: 'Jane',
