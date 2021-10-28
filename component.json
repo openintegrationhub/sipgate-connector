@@ -18,7 +18,10 @@
       "title": "Fetch Contacts",
       "description": "Get Sipgate contacts",
       "type": "polling",
-      "main": "./lib/triggers/getContacts.js"
+      "main": "./lib/triggers/getContacts.js",
+      "metadata": {
+        "out": "./lib/schemas/getContacts.out.json"
+      }
     }
   },
   "actions": {
@@ -26,7 +29,11 @@
       "title": "Upsert a contact",
       "description": "Upsert Sipgate contacts",
       "type": "polling",
-      "main": "./lib/actions/upsertContact.js"
+      "main": "./lib/actions/upsertContact.js",
+      "metadata": {
+        "in": "./lib/schemas/upsertContact.in.json",
+        "out": "./lib/schemas/upsertContact.out.json"
+      }
     }
   }
 }
