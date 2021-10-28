@@ -1,0 +1,64 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "example": "dasgdsza78767das"
+          },
+      "name": {
+        "type": "string",
+        "example": "Ada Lovelace"
+      },
+      "family": {
+        "type": "string",
+        "example": "Lovelace"
+      },
+      "given": {
+        "type": "string",
+        "example": "Ada"
+      },
+      "picture": {
+        "type": "string",
+        "example": "4AAQSkZJRgABAQAAAQABAAD..."
+      },
+      "emails": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "email": { "type": "string", "example": "user@example.com" }
+          }
+        }
+      },
+      "numbers": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "number": { "type": "string", "example": "+4915799912345" }
+          }
+        }
+      },
+      "addresses": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "poBox": { "type": "string", "example": "this dsad" },
+            "extendedAddress": { "type": "string", "example": "this dsad" },
+            "streetAddress": { "type": "string", "example": "this dsad" },
+            "locality": { "type": "string", "example": "this dsad" },
+            "region": { "type": "string", "example": "this dsad" },
+            "postalCode": { "type": "string", "example": "this dsad" },
+            "country": { "type": "string", "example": "this dsad" }
+          }
+        }
+      },
+      "organization": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+      "scope": { "type": "string", "example": "PRIVATE" }
+    }
+  }
+  
